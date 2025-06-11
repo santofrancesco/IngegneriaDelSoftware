@@ -14,9 +14,6 @@ public String getNome() {
 public void setNome(String nome) {
 	this.nome = nome;
 }
-public String getSuono() {
-	return suono;
-}
 public void setSuono(String suono) {
 	this.suono = suono;
 }
