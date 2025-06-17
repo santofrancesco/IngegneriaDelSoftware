@@ -1,12 +1,14 @@
 package packageIngegneria;
 
+import pack.Campanello;
+
 public class Main {
+	
+    public static void main(String[] args) {
+        Campanello campanello1 = CampanelloFactory.creaCampanello("classico");
+        campanello1.suona();
 
-	public static void main(String[] args) {
-
-		Campanello camp1 = new Campanello("camp1", "Ding Dong");
-		String suono1 = camp1.suona();
-		System.out.println(suono1);
-	}
-
+        Campanello campanello2 = CampanelloFactory.creaCampanello("digitale");
+        campanello2.suona();
+    }
 }
