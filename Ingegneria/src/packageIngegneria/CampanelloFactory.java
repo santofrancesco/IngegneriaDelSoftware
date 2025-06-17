@@ -1,6 +1,8 @@
 package packageIngegneria;
 
 import pack.Campanello;
+import pack.CampanelloClassico;
+import pack.CampanelloDigitale;
 
 public class CampanelloFactory {
 
@@ -9,7 +11,7 @@ public class CampanelloFactory {
 		case "classico":
 			return new CampanelloClassico();
 		case "digitale":
-			return CampanelloDigitale();
+			return new CampanelloDigitale();
 		default:
             throw new IllegalArgumentException("Tipo di campanello non supportato: " + tipo);
 		}
