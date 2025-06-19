@@ -7,14 +7,14 @@ public class CampanelloAdapter implements Campanello, CampanelloTriplo {
 		this.tr=tr;
 	}
 	@Override
-	public void suona() {
-		this.suonaTriplo();	
-	}
-	@Override
 	public void suonaTriplo() {
 		tr.suona();
 		tr.suona();
-		tr.suona();
-		
+		tr.suona();	
 	}
+	@Override
+	public void suona() {
+		this.suonaTriplo();	
+	}
+
 }
