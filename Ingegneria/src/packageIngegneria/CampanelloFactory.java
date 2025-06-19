@@ -12,6 +12,8 @@ public class CampanelloFactory {
 			return new CampanelloClassico();
 		case "digitale":
 			return new CampanelloDigitale();
+		case "triplo":
+			return new CampanelloTriplo();
 		default:
             throw new IllegalArgumentException("Tipo di campanello non supportato: " + tipo);
 		}
