@@ -8,7 +8,7 @@ class CampanelloFactoryTest {
 
 	@Test
 	void test() {
-		assertTrue();
+		
 	}
 
 }
