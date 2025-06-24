@@ -16,7 +16,8 @@ public class Main {
 //        Campanello campanello3 = CampanelloFactory.creaCampanello("triploClassico");
 //        campanello3.suona();
         
-        CampanelloAdapter campanelloAdatto = new CampanelloAdapter(CampanelloFactory.creaCampanello("triploDigitale"));
+    	var campanello = CampanelloFactory.creaCampanello("triploDigitale");
+        CampanelloAdapter campanelloAdatto = new CampanelloAdapter(campanello);
         campanelloAdatto.suonaTriplo();
         		
     }
